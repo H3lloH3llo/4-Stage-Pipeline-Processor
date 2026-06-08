@@ -23,6 +23,7 @@ Signed operations are performed with saturated rounding that takes the result, a
 
 R3-Instruction Format
 <img width="482" height="80" alt="image" src="https://github.com/user-attachments/assets/8ff21143-ffa2-4efb-b683-8538cd8367ff" />
+
 In the table below, 16-bit signed integer add (AHS), and subtract (SFHS) operations are performed with saturation to signed halfword rounding that takes a 16-bit signed integer X, and converts it to -32768 (the most negative 16-bit signed value) if it is less than -32768, to +32767 (the highest positive 16-bit signed value) if it is greater than 32767, and leaves it unchanged otherwise.
 
 <img width="968" height="849" alt="image" src="https://github.com/user-attachments/assets/8aa0bd3b-b9f5-4586-87ed-4138c44f2bff" />
