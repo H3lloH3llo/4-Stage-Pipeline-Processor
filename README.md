@@ -5,6 +5,7 @@ Pipeline Block Diagram
 This is a final group project for ESE 345 Computer Architecture in Stony Brook University. It is a 4-stage pipeline processor with data forwarding written in VHDL through the application ModelSIM - INTEL FPGA. The four stages are Instruction Fetch, Instruction Decode, Execute, and Write-Back with data forwarding connecting Write-Back and Execute Stage. The indiviual stages runs asynchronous to the system clock while the registers between each stage runs synchronous to the system clock.
 
 The ALU unit within the Execute Stage has three different 24-bit instruction format listed below along with their description. These were provided within the project's description.
+
 Load Immediate Instruction Format
 
 <img width="385" height="74" alt="image" src="https://github.com/user-attachments/assets/fe2ddc7e-4270-4573-acdc-77503a27095c" />
