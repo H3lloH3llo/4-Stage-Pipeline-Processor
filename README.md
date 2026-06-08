@@ -6,16 +6,19 @@ This is a final group project for ESE 345 Computer Architecture in Stony Brook U
 
 The ALU unit within the Execute Stage has three different 24-bit instruction format listed below along with their description. These were provided within the project's description.
 Load Immediate Instruction Format
+
 <img width="385" height="74" alt="image" src="https://github.com/user-attachments/assets/fe2ddc7e-4270-4573-acdc-77503a27095c" />
 li: Load a 16-bit Immediate value from the [20:5] instruction field into the 16-bit field specified by the Load Index field [23:21] of the 128-bit register rd. Other fields of register rd are not changed. Note that a LI instruction first reads register rd and then (after inserting an immediate value into one of its fields) writes it back to register rd, i.e., register rd is both a source and destination register of the LI instruction!
 
 Multiply-Add and Mutiply-Subtract R4-Instruction Format
+
 <img width="600" height="71" alt="image" src="https://github.com/user-attachments/assets/c5ccccf4-01be-42f0-803a-269cabfd9479" />
 Signed operations are performed with saturated rounding that takes the result, and sets a floor and ceiling corresponding to the max range for that data size. This means that instead of over/underflow wrapping, the max/min values are used.
 <img width="319" height="96" alt="image" src="https://github.com/user-attachments/assets/fc94a6e7-4c66-42c8-9012-8d8e5bc1676d" />
 <img width="858" height="607" alt="image" src="https://github.com/user-attachments/assets/12de0312-88cf-4aa0-90f1-2e9c9320370a" />
 
 R3-Instruction Format
+
 <img width="482" height="80" alt="image" src="https://github.com/user-attachments/assets/8ff21143-ffa2-4efb-b683-8538cd8367ff" />
 In the table below, 16-bit signed integer add (AHS), and subtract (SFHS) operations are performed with saturation to signed halfword rounding that takes a 16-bit signed integer X, and converts it to -32768 (the most negative 16-bit signed value) if it is less than -32768, to +32767 (the highest positive 16-bit signed value) if it is greater than 32767, and leaves it unchanged otherwise.
 <img width="968" height="849" alt="image" src="https://github.com/user-attachments/assets/8aa0bd3b-b9f5-4586-87ed-4138c44f2bff" />
